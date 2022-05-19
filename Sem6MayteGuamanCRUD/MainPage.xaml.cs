@@ -33,13 +33,13 @@ namespace Sem6MayteGuamanCRUD
             }
             catch (Exception)
             {
-                DisplayAlert("Mensaje de alerta", "Algo Salió Mal", "OK");
+                DisplayAlert("Mensaje de alerta", "Error al intentar insertar", "OK");
             }
         }
 
-        private void btnRegresar_Clicked(object sender, EventArgs e)
+        private async void btnRegresar_Clicked(object sender, EventArgs e)
         {
-
+            await Navigation.PushAsync(new Opcion());
         }
     }
 }

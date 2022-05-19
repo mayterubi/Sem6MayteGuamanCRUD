@@ -1,15 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Sem6MayteGuamanCRUD.Actualizar">
+             x:Class="Sem6MayteGuamanCRUD.Opcion">
     <ContentPage.Content>
-        <StackLayout >
-            <Label Text="Consumir web service Get" FontSize="20" HorizontalTextAlignment="Center">
+        <StackLayout>
+            <Label Text="Opciones" FontSize="Medium" HorizontalTextAlignment="Center"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+
+            <Label Text="CRUD" FontSize="20" HorizontalTextAlignment="Center">
             </Label>
             <Label x:Name="texto" Text="">
             </Label>
-            <Button Text="Consultar" x:Name="btnGet" Clicked="btnGet_Clicked" CornerRadius="15" BackgroundColor="Gold" TextColor="White"/>
-
+            
             <ListView x:Name="MyListView" >
                 <ListView.ItemTemplate>
                     <DataTemplate>
@@ -24,6 +27,11 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
+            <Button x:Name="btnConsutar" Text="Consultar" Clicked="btnConsutar_Clicked" FontSize="Medium" BackgroundColor="Gold" />
+            <Button x:Name="btnNuevo" Text="Insertar" Clicked="btnNuevo_Clicked"  FontSize="Medium" BackgroundColor="MediumAquamarine" />
+            <Button x:Name="btnActualizar" Text="Actualizar" Clicked="btnActualizar_Clicked"  FontSize="Medium" BackgroundColor="LightCoral" />
+            <Button x:Name="btnEliminar" Text="Eliminar" Clicked="btnEliminar_Clicked" FontSize="Medium" BackgroundColor="MistyRose" />
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

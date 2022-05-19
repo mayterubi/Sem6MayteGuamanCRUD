@@ -10,7 +10,8 @@ namespace Sem6MayteGuamanCRUD
         {
             InitializeComponent();
             //MainPage = new Actualizar();
-            MainPage = new MainPage();
+           // MainPage = new MainPage();
+            MainPage = new NavigationPage(new Opcion());
         }
 
         protected override void OnStart()
